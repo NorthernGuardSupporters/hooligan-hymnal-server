@@ -53,6 +53,7 @@ exports.me = (req, res) => {
 		songbookAllowed,
 		rosterAllowed,
 		pushNotificationsAllowed,
+		feedAllowed,
 		usersAllowed
 	} = req.user;
 	res.json({
@@ -60,6 +61,7 @@ exports.me = (req, res) => {
 			email,
 			name,
 			familyName,
+			feedAllowed,
 			foesAllowed,
 			songbookAllowed,
 			rosterAllowed,
